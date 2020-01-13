@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.companyship">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <!--//设置Camera能够自动-->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.MainActivity"/>
+
+        <activity android:name=".activity.RegisterActivity"/>
+
+        <activity android:name=".activity.OrderActivity"/>
+
+        <activity android:name=".activity.ExamineActivity"/>
+
+        <activity android:name=".activity.ExamineDetailsActivity"/>
+
+        <activity android:name=".activity.CalendarActivityDialog"
+            android:theme="@style/Theme.dateTime"/>
+
+        <activity android:name=".activity.MyMessageActivity"/>
+
+        <activity android:name=".activity.MyStatisticsActivity"/>
+
+        <receiver
+            android:name=".receiver.MyReceiver"
+            >
+            <intent-filter>
+                <action android:name="onClick" />//通知点击事件
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" /> <!--系统下载完成的intent-->
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" /><!--系统下载点击的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

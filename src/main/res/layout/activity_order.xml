@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_50"
+            android:padding="@dimen/padding_5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/query_criteria"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/bg_shap"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:drawableLeft="@drawable/required"
+                    android:text="@string/inspection_number"
+                    android:textSize="@dimen/textsize_18" />
+
+                <EditText
+                    android:id="@+id/et_order_inspectionnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@android:color/white"
+                    android:hint="310300116" />
+
+                <ImageView
+                    android:id="@+id/iv_order_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/search" />
+            </LinearLayout>
+   <!--     预约信息             -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/booking_information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical"
+                android:background="@drawable/bg_shap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/english_name"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <EditText
+                        android:id="@+id/et_order_englishname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/voyage_number"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <EditText
+                        android:id="@+id/et_order_voyagenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivery_numbers"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <EditText
+                        android:id="@+id/et_order_billlading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_boxtype"
+                        android:drawableLeft="@drawable/required"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <Spinner
+                        android:id="@+id/sp_order_boxtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inspection_depart"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <Spinner
+                        android:id="@+id/sp_order_inspectiondepartment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/destination"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <Spinner
+                        android:id="@+id/sp_order_destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_containervolume"
+                        android:drawableLeft="@drawable/required"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <EditText
+                        android:id="@+id/et_order_containervolume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_appointment"
+                        android:drawableLeft="@drawable/required"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_timeappoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/please_select"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inspection_site"
+                        android:drawableLeft="@drawable/required"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <Spinner
+                        android:id="@+id/sp_order_inspectionsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_item"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quality"
+                        android:textSize="@dimen/textsize_16"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/animal_plant_inspection"
+                        android:textSize="@dimen/textsize_16"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food_inspection"
+                        android:textSize="@dimen/textsize_16"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wood_packaging"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quarantine_treatment"
+                        android:textSize="@dimen/textsize_16"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check"
+                        android:textSize="@dimen/textsize_16"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radioactivity"
+                        android:textSize="@dimen/textsize_16"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_order_checkitem8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/validation_verification"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contacts"
+                        android:drawableLeft="@drawable/required"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <EditText
+                        android:id="@+id/et_order_contacts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_number"
+                        android:drawableLeft="@drawable/required"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <EditText
+                        android:id="@+id/et_order_contactnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remarks"
+                        android:textSize="@dimen/textsize_18"/>
+
+                    <EditText
+                        android:id="@+id/et_order_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="@dimen/textsize_16"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_order_savedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:textSize="@dimen/textsize_18"
+                android:padding="@dimen/padding_5"
+                android:gravity="center"
+                android:background="@drawable/shape_btn"
+                android:text="@string/save_data"/>
+
+            <!--   拼票列表    -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/list_fight_tickets"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/bg_shap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_5">
+
+                    <EditText
+                        android:id="@+id/et_order_fightinspection"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:hint="@string/hint_list_fight_tickets"/>
+
+                    <TextView
+                        android:id="@+id/tv_order_addtoitem"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/add_item"
+                        android:textSize="@dimen/textsize_18"
+                        android:text="@string/addtoitem"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="@android:color/darker_gray"/>
+
+                <ListView
+                    android:id="@+id/lv_addlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+            </LinearLayout>
+
+            <!--   箱号列表    -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_list"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_20" />
+
+            <include layout="@layout/layout_caseitem"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

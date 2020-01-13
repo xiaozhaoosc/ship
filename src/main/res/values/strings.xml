@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">危险品查验预约系统</string>
+    <string name="application_name">危险品查验预约系统</string>
+    <string name="user_name">用户代码：</string>
+    <string name="hint_username">输入用户名</string>
+    <string name="pass_word">密&#160;&#160;&#160;&#160;&#160;&#160;&#160; 码：</string>
+    <string name="hint_password">输入密码</string>
+    <string name="login_type">类&#160;&#160;&#160;&#160;&#160;&#160;&#160; 别：</string>
+    <string name="login">登录</string>
+    <string name="newuser_registration">新用户注册！</string>
+
+
+    <string name="my_order">我要预约</string>
+    <string name="my_documents">我的单证</string>
+    <string name="contact_infor">联系方式</string>
+    <string name="my_information">我的消息</string>
+    <string name="my_statistics">我的统计</string>
+    <string name="signout">退出</string>
+    <string name="bzt_hotline">宝桢通热线：</string>
+    <string name="bzt_phoneNum">4008200850</string>
+
+
+    <string name="enterprise_namechia">企业全称（中文）：</string>
+    <string name="enterprise_nameeng">&#160;&#160;&#160;&#160;企业全称（英文）：</string>
+    <string name="business_address">企业地址：</string>
+    <string name="zipcode">邮编：</string>
+    <string name="organization_code">组织机构代码：</string>
+    <string name="declaration_code">海港版申报代码：</string>
+    <string name="contacts">联系人：</string>
+    <string name="contact_number">联系电话：</string>
+    <string name="register">注册</string>
+    <string name="refillings">重填</string>
+
+
+    <string name="reportno">报检号：</string>
+    <string name="delivery_numbers">提运单号：</string>
+    <string name="time_appointment">预约时间：</string>
+    <string name="english_name">英文船名：</string>
+    <string name="delivery">计划是否发送：</string>
+    <string name="query_item">查询</string>
+
+
+    <string name="details_voyagenumber">航次号：</string>
+    <string name="details_containervolume">箱量：</string>
+    <string name="details_deliverynumbers">提运单号：</string>
+    <string name="details_boxtype">箱子类型：</string>
+    <string name="details_inspectionitems">查验项目：</string>
+    <string name="inspection_department">查验科室：</string>
+    <string name="documentary_infor">单证情况：</string>
+    <string name="arrival_status">到货情况：</string>
+    <string name="appointment_notes">预约备注：</string>
+    <string name="inspection_result">查验结果：</string>
+    <string name="operation_time">查验操作时间：</string>
+    <string name="operator_person">查验操作人：</string>
+    <string name="inspection_notes">查验备注：</string>
+
+
+    <string name="info_listitem">消息列表</string>
+    <string name="statistics_info">统计信息</string>
+    <string name="notdata">无</string>
+    <string name="start_date">开始日期：</string>
+    <string name="end_date">结束日期：</string>
+
+    <string name="query_criteria">查询条件</string>
+    <string name="inspection_number">报检单号：</string>
+    <string name="booking_information">预约信息</string>
+    <string name="voyage_number">航次：</string>
+    <string name="inspection_depart">施检部门：</string>
+    <string name="destination">目的地机构：</string>
+    <string name="please_select">请选择</string>
+    <string name="inspection_site">查验地点：</string>
+    <string name="check_item">施检项目：</string>
+    <string name="quality">品质</string>
+    <string name="animal_plant_inspection">动植检</string>
+    <string name="food_inspection">食检</string>
+    <string name="wood_packaging">木包装</string>
+    <string name="quarantine_treatment">检疫处理</string>
+    <string name="check">查验</string>
+    <string name="radioactivity">放射性</string>
+    <string name="validation_verification">验证/核查</string>
+    <string name="remarks">备注：</string>
+    <string name="save_data">保存预约数据</string>
+    <string name="list_fight_tickets">拼票列表</string>
+    <string name="hint_list_fight_tickets">输入拼票报检号</string>
+    <string name="addtoitem">添加</string>
+    <string name="number_list">箱号列表</string>
+    <string name="box_number">箱号：</string>
+    <string name="box_shape">箱形：</string>
+    <string name="box_size">尺寸：</string>
+    <string name="nations_number">联合国编号：</string>
+    <string name="risk_level">危险等级：</string>
+    <string name="increase">增加</string>
+
+
+
+</resources>
